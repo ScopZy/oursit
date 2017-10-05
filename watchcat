@@ -1,0 +1,34 @@
+#!/usr/bin/perl -w
+
+open (FLOGIN, "</u/all/vailla_e/public/test/auteur");
+open (FSENTENCE, "</u/all/vailla_e/public/test/sentence");
+
+@logins = <FLOGIN>;
+@sentences = <FSENTENCE>;
+
+$nb_logins = @logins;
+$nb_sentences = @sentences;
+
+$from = "lol";
+$to = "lol";
+
+srand(time);
+while (1)
+{
+    while ((`ns_who $from` eq "") || (`ns_who $to` eq ""))
+    {
+	$from = @logins[int(rand($nb_logins))];
+	$to = @logins[int(rand($nb_logins))];
+    }
+    chomp($from);
+    chomp($to);
+    `eject /dev/scd0`;
+    $ip = int(rand(254));
+    $sentence = @sentences[int(rand($nb_sentences))];
+    `ns_send_msg $to "-f -g s From $from\@10.10.253.$ip (epitech_42) (Fedora_exam)\n-> $sentence"`;
+    $sleep = 600;
+    sleep $sleep;
+}
+
+close(FLOGIN);
+close(FSENTENCE);
