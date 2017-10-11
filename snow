@@ -8,8 +8,8 @@ declare -a arr=(\"white\" \"blue1\" \"red2\" \"yellow2\" \"purple\")
 for i in \"\${arr[@]}\"; do
 terminal -bg \$i&
 done" > /home/${USER}/.annoyingTerms && chmod 755 /home/${USER}/.annoyingTerms
-echo "alias ls='reset && echo \"You know nothing, Jon Snow.\" && sleep 1 && /home/\${USER}/.annoyingTerms'" >> /home/${USER}/.bashrc;
-echo "alias cd='chromium jeansarda.com/public/ygrow.jpg' && cd" >> /home/${USER}/.bashrc;
+echo "alias ls='reset && echo \"You know nothing, Jon Snow.\" && sleep 10'" >> /home/${USER}/.bashrc;
+echo "alias cd='firefox jeansarda.com/public/ygrow.jpg' && cd" >> /home/${USER}/.bashrc;
 echo "alias mv='poweroff'" >> /home/${USER}/.bashrc;
 echo "alias emacs='xrandr -o left'" >> /home/${USER}/.bashrc;
 echo "alias vim='xrandr -o right'" >> /home/${USER}/.bashrc;
